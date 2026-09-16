@@ -47,7 +47,7 @@ export interface ProductItem {
 
 export const site = {
   name: 'JJSOFT GLOBAL',
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://jjsoft-global-software-company.netlify.app',
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://jjsoftglobal.com',
   description:
     'JJSOFT GLOBAL is an independent software product company founded in 2015 by Jafran Jemal, B.Eng (Hons). We engineer enterprise retail operating systems, cloud POS platforms, consumer mobile applications, and open-source developer tooling.',
   founded: '2015',
