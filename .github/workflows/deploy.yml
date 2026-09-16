@@ -1,0 +1,66 @@
+name: Build & Deploy to VPS
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+concurrency:
+  group: production-deployment
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: 1. Validate Build & Types
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Build & Standalone Trace Check
+        run: npm run build
+
+  deploy:
+    name: 2. Deploy to VPS via SSH
+    needs: validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: SSH to VPS & Rollout Container
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USERNAME }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          port: ${{ secrets.VPS_PORT || 22 }}
+          script: |
+            set -e
+            echo "🚀 Starting deployment on VPS..."
+            cd ${{ secrets.VPS_DEPLOY_PATH || '/var/www/jjsoft-global-site' }}
+
+            # Pull latest changes from git
+            git fetch origin
+            git reset --hard origin/main
+
+            # Build and launch new container on custom port 4985
+            echo "🔨 Building Docker image..."
+            docker compose build
+
+            echo "🔄 Rolling over container..."
+            docker compose up -d --remove-orphans
+
+            # Clean up old unused images to save VPS disk space
+            echo "🧹 Cleaning unused Docker images..."
+            docker image prune -f
+
+            echo "✅ Deployment completed successfully!"
+            docker compose ps

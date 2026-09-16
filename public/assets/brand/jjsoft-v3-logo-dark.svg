@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 110" width="460" height="110">
+  <defs>
+    <linearGradient id="neonCrimson" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4a62" />
+      <stop offset="50%" stop-color="#ff1837" />
+      <stop offset="100%" stop-color="#cc001e" />
+    </linearGradient>
+    <linearGradient id="platinumSilver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+    <filter id="crimsonAura" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#ff1837" flood-opacity="0.5" />
+    </filter>
+    <filter id="badgeGlow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#ff1837" flood-opacity="0.55" />
+    </filter>
+  </defs>
+
+  <!-- EMBLEM: Isometric Hex Ribbon Double-J -->
+  <g transform="translate(14, 12)">
+    <!-- Soft Atmospheric Underglow -->
+    <circle cx="42" cy="42" r="36" fill="#ff1837" opacity="0.14" filter="url(#crimsonAura)" />
+
+    <!-- Crimson Upper-Left Ribbon (First J + Crown) -->
+    <path d="M 42 12
+             L 15 27.6
+             L 15 58.8
+             L 30 67.5
+             L 45 58.8
+             L 45 42"
+          fill="none" 
+          stroke="url(#neonCrimson)" 
+          stroke-width="11" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"
+          filter="url(#crimsonAura)" />
+
+    <!-- Silver Lower-Right Ribbon (Second J + Base) -->
+    <path d="M 42 12
+             L 69 27.6
+             L 69 58.8
+             L 42 74.4
+             L 15 58.8"
+          fill="none" 
+          stroke="url(#platinumSilver)" 
+          stroke-width="11" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+
+    <!-- Inner Interlocking Stem of Second J -->
+    <path d="M 54 36.5
+             L 54 53.5
+             L 42 60.5
+             L 30 53.5"
+          fill="none" 
+          stroke="url(#platinumSilver)" 
+          stroke-width="9" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+
+    <!-- Upper Right Accent Pip -->
+    <circle cx="56" cy="27" r="4.2" fill="url(#platinumSilver)" />
+  </g>
+
+  <!-- TYPOGRAPHY: JJSOFT GLOBAL -->
+  <g transform="translate(118, 16)">
+    <!-- Primary Brand Name: JJSOFT -->
+    <text x="0" y="40" 
+          font-family="'Outfit', 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" 
+          font-size="44" 
+          font-weight="900" 
+          fill="#ffffff" 
+          letter-spacing="-0.025em">JJSOFT</text>
+    
+    <!-- Subtitle: GLOBAL -->
+    <text x="2" y="70" 
+          font-family="'Outfit', 'Space Grotesk', 'Inter', sans-serif" 
+          font-size="22" 
+          font-weight="700" 
+          fill="#ffffff" 
+          letter-spacing="0.18em">GLOBAL</text>
+
+    <!-- Glowing Crimson Badge: GLOBAL -->
+    <g transform="translate(136, 52)" filter="url(#badgeGlow)">
+      <rect x="0" y="0" width="76" height="22" rx="11" fill="url(#neonCrimson)" />
+      <text x="38" y="15.5" 
+            font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" 
+            font-size="11" 
+            font-weight="900" 
+            fill="#ffffff" 
+            text-anchor="middle" 
+            letter-spacing="0.08em">GLOBAL</text>
+    </g>
+  </g>
+</svg>

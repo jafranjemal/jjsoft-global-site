@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+.git
+.gitignore
+*.md
+*.log
+.env*.local
+.vscode
+.idea
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.playwright-mcp

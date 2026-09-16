@@ -1,0 +1,26 @@
+services:
+  jjsoft-website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jjsoft-global-website
+    restart: unless-stopped
+    ports:
+      # Bound strictly to 127.0.0.1 on custom non-standard port 4985
+      # (Prevents collision with other apps and shields from public port scanners)
+      - "127.0.0.1:${APP_PORT:-4985}:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - NEXT_PUBLIC_SITE_URL=${NEXT_PUBLIC_SITE_URL:-https://jjsoft-global-software-company.netlify.app}
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider http://127.0.0.1:3000/ || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

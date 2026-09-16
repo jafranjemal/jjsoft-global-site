@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 110" width="460" height="110">
+  <!-- EMBLEM: Isometric Hex Ribbon Double-J (Monochrome) -->
+  <g transform="translate(14, 12)">
+    <path d="M 42 12
+             L 15 27.6
+             L 15 58.8
+             L 30 67.5
+             L 45 58.8
+             L 45 42"
+          fill="none" 
+          stroke="#000000" 
+          stroke-width="11" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+
+    <path d="M 42 12
+             L 69 27.6
+             L 69 58.8
+             L 42 74.4
+             L 15 58.8"
+          fill="none" 
+          stroke="#000000" 
+          stroke-width="11" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+
+    <path d="M 54 36.5
+             L 54 53.5
+             L 42 60.5
+             L 30 53.5"
+          fill="none" 
+          stroke="#000000" 
+          stroke-width="9" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+
+    <circle cx="56" cy="27" r="4.2" fill="#000000" />
+  </g>
+
+  <!-- TYPOGRAPHY: JJSOFT GLOBAL -->
+  <g transform="translate(118, 16)">
+    <text x="0" y="40" 
+          font-family="'Outfit', 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" 
+          font-size="44" 
+          font-weight="900" 
+          fill="#000000" 
+          letter-spacing="-0.025em">JJSOFT</text>
+    
+    <text x="2" y="70" 
+          font-family="'Outfit', 'Space Grotesk', 'Inter', sans-serif" 
+          font-size="22" 
+          font-weight="700" 
+          fill="#000000" 
+          letter-spacing="0.18em">GLOBAL</text>
+
+    <g transform="translate(136, 52)">
+      <rect x="0" y="0" width="76" height="22" rx="11" fill="#000000" />
+      <text x="38" y="15.5" 
+            font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" 
+            font-size="11" 
+            font-weight="900" 
+            fill="#ffffff" 
+            text-anchor="middle" 
+            letter-spacing="0.08em">GLOBAL</text>
+    </g>
+  </g>
+</svg>

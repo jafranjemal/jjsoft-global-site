@@ -1,0 +1,261 @@
+{
+  "project": "JJSOFT GLOBAL 3D Cosmic Environment & Hardware Asset Pack",
+  "version": "1.0.0",
+  "coordinateSystem": "Right-handed Y-up (glTF 2.0 / Three.js standard)",
+  "units": "Meters (1 unit = 1 meter)",
+  "totalAssetsCount": 7,
+  "categories": [
+    "props",
+    "environment",
+    "lighting",
+    "background"
+  ],
+  "assets": [
+    {
+      "name": "laptop-workstation",
+      "category": "props",
+      "sourceImageRegion": {
+        "x": 340,
+        "y": 190,
+        "width": 250,
+        "height": 210
+      },
+      "files": {
+        "lod0": "/3d-assets/props/laptop-workstation.glb",
+        "lod1": "/3d-assets/props/laptop-workstation-lod1.glb",
+        "lod2": "/3d-assets/props/laptop-workstation-lod2.glb"
+      },
+      "meshCount": 1,
+      "materialCount": 1,
+      "polygonCount": {
+        "lod0": 12,
+        "lod1": 12,
+        "lod2": 12
+      },
+      "textureResolution": "1024x1024 PBR / 225x195 Screen UI",
+      "textureFormat": "PNG / WebP / KTX2",
+      "fileSizeApprox": "1.6 KB",
+      "recommendedLOD": "lod0 for Hero viewport, lod1 for mobile viewports",
+      "pivotOrigin": "Hinge centerline (Y=0, Z=0) for natural screen opening/closing rotation",
+      "animationCapability": [
+        "Lid open/close angle (0 deg - 125 deg)",
+        "Screen UI sparkline data tick",
+        "Keyboard backlight pulse"
+      ],
+      "interactiveCapability": [
+        "Pointer hover tilt",
+        "Click to switch active software view (iShopMaster / Quazi Court / AavanamKit)",
+        "Drag to rotate"
+      ],
+      "recommendedUsage": "Main hero showcase center stage, interactive telemetry viewer"
+    },
+    {
+      "name": "smartphone-device",
+      "category": "props",
+      "sourceImageRegion": {
+        "x": 575,
+        "y": 265,
+        "width": 90,
+        "height": 190
+      },
+      "files": {
+        "lod0": "/3d-assets/props/smartphone-device.glb",
+        "lod1": "/3d-assets/props/smartphone-device-lod1.glb",
+        "lod2": "/3d-assets/props/smartphone-device-lod2.glb"
+      },
+      "meshCount": 1,
+      "materialCount": 1,
+      "polygonCount": {
+        "lod0": 12,
+        "lod1": 12,
+        "lod2": 12
+      },
+      "textureResolution": "512x1024 Screen UI",
+      "textureFormat": "PNG / WebP",
+      "fileSizeApprox": "1.6 KB",
+      "recommendedLOD": "lod0",
+      "pivotOrigin": "Base center (Y=0) where phone contacts pedestal",
+      "animationCapability": [
+        "Subtle floating hover bob",
+        "Mobile UI push notification cards",
+        "Rim light reflection pass"
+      ],
+      "interactiveCapability": [
+        "Hover scale up 1.05x",
+        "Click to trigger Find Soulmate / WhatsTrim modal",
+        "Gyroscope tilt on mobile"
+      ],
+      "recommendedUsage": "Consumer mobile applications and mobile utility spotlight"
+    },
+    {
+      "name": "tablet-device",
+      "category": "props",
+      "sourceImageRegion": {
+        "x": 670,
+        "y": 220,
+        "width": 160,
+        "height": 230
+      },
+      "files": {
+        "lod0": "/3d-assets/props/tablet-device.glb",
+        "lod1": "/3d-assets/props/tablet-device-lod1.glb",
+        "lod2": "/3d-assets/props/tablet-device-lod2.glb"
+      },
+      "meshCount": 1,
+      "materialCount": 1,
+      "polygonCount": {
+        "lod0": 12,
+        "lod1": 12,
+        "lod2": 12
+      },
+      "textureResolution": "1024x1024 Screen UI",
+      "textureFormat": "PNG / WebP",
+      "fileSizeApprox": "1.6 KB",
+      "recommendedLOD": "lod0",
+      "pivotOrigin": "Base center (Y=0)",
+      "animationCapability": [
+        "JJSOFT logo sine wave particle displacement",
+        "Angle micro-drift"
+      ],
+      "interactiveCapability": [
+        "Hover glow amplification",
+        "Click to open brand story"
+      ],
+      "recommendedUsage": "Enterprise tablet POS and JJSOFT brand identity showcase"
+    },
+    {
+      "name": "volcanic-pedestal",
+      "category": "environment",
+      "sourceImageRegion": {
+        "x": 230,
+        "y": 440,
+        "width": 650,
+        "height": 125
+      },
+      "files": {
+        "lod0": "/3d-assets/environment/volcanic-pedestal.glb",
+        "lod1": "/3d-assets/environment/volcanic-pedestal-lod1.glb",
+        "lod2": "/3d-assets/environment/volcanic-pedestal-lod2.glb"
+      },
+      "meshCount": 1,
+      "materialCount": 1,
+      "polygonCount": {
+        "lod0": 12,
+        "lod1": 12,
+        "lod2": 12
+      },
+      "textureResolution": "2048x1024 Normal + Roughness map",
+      "textureFormat": "PNG / WebP",
+      "fileSizeApprox": "1.6 KB",
+      "recommendedLOD": "lod0",
+      "pivotOrigin": "Ground base center (Y=-0.6)",
+      "animationCapability": [
+        "Static anchor platform",
+        "Ambient occlusion shadow receiver"
+      ],
+      "interactiveCapability": [
+        "Receives shadow from devices and dynamic mouse spotlight"
+      ],
+      "recommendedUsage": "Stage foundation for hardware presentation"
+    },
+    {
+      "name": "earth-network-globe",
+      "category": "environment",
+      "sourceImageRegion": {
+        "x": 270,
+        "y": 50,
+        "width": 490,
+        "height": 400
+      },
+      "files": {
+        "lod0": "/3d-assets/environment/earth-network-globe.glb",
+        "lod1": "/3d-assets/environment/earth-network-globe-lod1.glb",
+        "lod2": "/3d-assets/environment/earth-network-globe-lod2.glb"
+      },
+      "meshCount": 1,
+      "materialCount": 1,
+      "polygonCount": {
+        "lod0": 1728,
+        "lod1": 768,
+        "lod2": 320
+      },
+      "textureResolution": "2048x2048 Equirectangular night lights + atmosphere mask",
+      "textureFormat": "PNG / WebP",
+      "fileSizeApprox": "64.2 KB",
+      "recommendedLOD": "lod0 for desktop, lod1 for mobile",
+      "pivotOrigin": "Geometric center of globe (0, 0, 0)",
+      "animationCapability": [
+        "Continuous axial rotation (0.001 rad/frame)",
+        "Pulsing red communication node lights",
+        "Bezier flight path packet animations"
+      ],
+      "interactiveCapability": [
+        "Drag to spin planet",
+        "Click country nodes (Sri Lanka, UAE, Singapore) to view deployments"
+      ],
+      "recommendedUsage": "Global infrastructure backdrop and interactive client locator"
+    },
+    {
+      "name": "neon-glow-ring",
+      "category": "lighting",
+      "sourceImageRegion": {
+        "x": 370,
+        "y": 440,
+        "width": 280,
+        "height": 35
+      },
+      "files": {
+        "lod0": "/3d-assets/lighting/neon-glow-ring.glb"
+      },
+      "meshCount": 1,
+      "materialCount": 1,
+      "polygonCount": {
+        "lod0": 12
+      },
+      "textureResolution": "Procedural emissive",
+      "textureFormat": "Vector / Shader",
+      "fileSizeApprox": "1.6 KB",
+      "recommendedLOD": "lod0",
+      "pivotOrigin": "Geometric center",
+      "animationCapability": [
+        "Breathing emissive pulse (intensity 2.0 - 4.5)",
+        "Audio-reactive / telemetry reactive flicker"
+      ],
+      "interactiveCapability": [
+        "Color shift based on active product tab (Red for iShopMaster, Gold for Gems, Cyan for Court)"
+      ],
+      "recommendedUsage": "Underglow accent lighting"
+    },
+    {
+      "name": "cosmic-starfield",
+      "category": "background",
+      "sourceImageRegion": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 571
+      },
+      "files": {
+        "lod0": "/3d-assets/background/cosmic-starfield.glb"
+      },
+      "meshCount": 1,
+      "materialCount": 1,
+      "polygonCount": {
+        "lod0": 768
+      },
+      "textureResolution": "2048x2048 Inverted Sky Dome",
+      "textureFormat": "PNG / WebP",
+      "fileSizeApprox": "28.5 KB",
+      "recommendedLOD": "lod0",
+      "pivotOrigin": "Camera center (0, 0, 0)",
+      "animationCapability": [
+        "Gentle camera parallax counter-drift",
+        "Star twinkle shader"
+      ],
+      "interactiveCapability": [
+        "Mouse move parallax depth shift"
+      ],
+      "recommendedUsage": "Scene skydome and depth backdrop"
+    }
+  ]
+}
